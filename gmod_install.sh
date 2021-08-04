@@ -133,7 +133,7 @@ if [ "$ARCH" = "x86_64" ];
 then
   dpkg --add-architecture i386
   apt-get update
-  apt-get -y install ia32-libs
+  apt-get -y install ia32-libs lib32stdc++6
 fi
 
 # Install tmux. Assume the version on the server is not new enough.
