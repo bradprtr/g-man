@@ -183,7 +183,7 @@ then
   OPTSTRING="$OPTSTRING +rcon_password $RCON_PASSWORD"
 fi
 
-if [ -n "$COLLECTION" && -n "$API_KEY" ];
+if [[ -n "$COLLECTION" && -n "$API_KEY" ]];
 then
   OPTSTRING="$OPTSTRING +host_workshop_collection $COLLECTION -authkey $API_KEY"
 fi
